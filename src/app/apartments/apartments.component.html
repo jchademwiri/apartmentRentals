@@ -98,45 +98,47 @@
       </mat-card-actions>
     </mat-card>
   </section> -->
-<mat-card-title id="location">
-  <form id="apartment">
-    <mat-card *ngFor="let appartment of apartments" class="rent-card">
-      <img mat-card-image [src]="appartment.image" alt="house image" />
-      <mat-card-title>
-        <label for="address"> </label>
-        <h2>{{ appartment.address }}</h2>
-      </mat-card-title>
-      <mat-card-content>
-        <p>
-          <label for="description"> </label>
-          {{ appartment.description }}
-        </p>
-        <p>
-          <label for="rooms">Rooms: {{ appartment.rooms }}</label>
-        </p>
-        <p>
-          <label for="price">Price: {{ appartment.price | currency }} </label>
-        </p>
-        <p>
-          <label for="name">Name: {{ appartment.name }} </label>
-        </p>
-        <p>
-          <label for="phone"
-            >Phone: <a href="tel:+275555555"> {{ appartment.phone }}</a>
-          </label>
-        </p>
-        <p>
-          <label for="email"
-            >Email:
-            <a href="mailto:email@email.com ">{{ appartment.email }}</a>
-          </label>
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button (click)="call()">Call</button>
-        <button mat-button (click)="messege()">MESSEGE</button>
-        <button mat-button (click)="mail()">Email</button>
-      </mat-card-actions>
-    </mat-card>
-  </form>
-</mat-card-title>
+<section>
+  <mat-card-title id="location">
+    <form id="apartment">
+      <mat-card *ngFor="let appartment of apartments" class="rent-card">
+        <img mat-card-image [src]="appartment.image" alt="house image" />
+        <mat-card-title>
+          <label for="address"> </label>
+          <h2>{{ appartment.address }}</h2>
+        </mat-card-title>
+        <mat-card-content>
+          <p>
+            <label for="description"> </label>
+            {{ appartment.description }}
+          </p>
+          <p>
+            <label for="rooms">Rooms: {{ appartment.rooms }}</label>
+          </p>
+          <p>
+            <label for="price">Price: {{ appartment.price | currency }} </label>
+          </p>
+          <p>
+            <label for="name">Name: {{ appartment.name }} </label>
+          </p>
+          <p>
+            <label for="phone"
+              >Phone: <a href="tel:+275555555"> {{ appartment.phone }}</a>
+            </label>
+          </p>
+          <p>
+            <label for="email"
+              >Email:
+              <a href="mailto:email@email.com ">{{ appartment.email }}</a>
+            </label>
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="call()">Call</button>
+          <button mat-button (click)="messege()">MESSEGE</button>
+          <button mat-button (click)="mail()">Email</button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </mat-card-title>
+</section>

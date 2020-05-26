@@ -5,23 +5,31 @@
   <mat-card id="main-contact">
     <mat-card id="contact-details">
       <h3>My contact Details</h3>
-      <p class="contact-align">
-        <mat-icon matSuffix>person</mat-icon> &nbsp;&nbsp;
-        <label for="name"></label> Jacob C.
-      </p>
-
-      <p class="contact-align">
-        <a href="tel:+27616911656">
-          <mat-icon matSuffix>phonelink_ring</mat-icon>&nbsp;&nbsp;
-        </a>
-        <label for="phone"></label> 0616 911 656
-      </p>
-      <p class="contact-align">
-        <a href="mailto:jchademwiri@gmail.com">
-          <mat-icon matSuffix>mail</mat-icon>&nbsp;&nbsp;
-        </a>
-        <label for="email"></label> jchademwiri@gmail.com
-      </p>
+      <div class="profile-container"></div>
+      <img
+        class="myprofile"
+        src="../../assets/images/portrait.jpg"
+        alt="myself"
+        srcset=""
+      />
+      <div class="profile-container">
+        <p class="contact-align">
+          <mat-icon matSuffix>person</mat-icon> &nbsp;&nbsp;
+          <label for="name"></label> Jacob C.
+        </p>
+        <p class="contact-align">
+          <a href="tel:+27616911656">
+            <mat-icon matSuffix>phonelink_ring</mat-icon>&nbsp;&nbsp;
+          </a>
+          <label for="phone"></label> 0616 911 656
+        </p>
+        <p class="contact-align">
+          <a href="mailto:jchademwiri@gmail.com">
+            <mat-icon matSuffix>mail</mat-icon>&nbsp;&nbsp;
+          </a>
+          <label for="email"></label> jchademwiri@gmail.com
+        </p>
+      </div>
     </mat-card>
 
     <!-- Contact form Starts here -->
@@ -47,6 +55,7 @@
         <mat-form-field class="input-full-width">
           <mat-label>Email</mat-label>
           <input
+            type="email"
             matInput
             [formControl]="emailFormControl"
             placeholder="Ex. pat@example.com"

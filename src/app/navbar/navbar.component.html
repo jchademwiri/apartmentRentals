@@ -10,9 +10,11 @@
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Home</a>
-      <a mat-list-item href="#">About</a>
-      <a mat-list-item href="#">Contact</a>
+      <a mat-list-item routerLink="/home" routerLinkActive="active">Home</a>
+      <a mat-list-item routerLink="/about" routerLinkActive="active">About</a>
+      <a mat-list-item routerLink="/contact" routerLinkActive="active"
+        >Contact</a
+      >
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -29,9 +31,11 @@
       <span>Apartment Rentals Manicaland</span>
       <span class="spacer"></span>
       <div [ngClass]="{ hidden: !(isHandset$ | async) === false }">
-        <a mat-list-item href="#">Home</a>
-        <a mat-list-item href="#">About</a>
-        <a mat-list-item href="#">Contact</a>
+        <a mat-list-item routerLink="/home" routerLinkActive="active">Home</a>
+        <a mat-list-item routerLink="/about" routerLinkActive="active">About</a>
+        <a mat-list-item routerLink="/contact" routerLinkActive="active"
+          >Contact</a
+        >
       </div>
     </mat-toolbar>
     <!-- Add Content Here -->

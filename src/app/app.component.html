@@ -1,7 +1,10 @@
 <app-navbar>
-  <app-apartments></app-apartments>
-  <app-about></app-about>
-  <app-contact></app-contact>
+  <!-- <mat-card id="main-header">
+    <h1 class="lead">{{ title }}</h1>
+    <p>beautiful home in manicaland, ever green!</p>
+  </mat-card> -->
+
+  <router-outlet></router-outlet>
   <footer>
     <mat-card-footer>
       All Copyrights Reserved: 2020. Developed by
@@ -9,5 +12,3 @@
     </mat-card-footer>
   </footer>
 </app-navbar>
-
-<router-outlet></router-outlet>

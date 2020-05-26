@@ -19,3 +19,49 @@ section {
   margin: auto;
   align-items: center;
 }
+
+/* Media Query Mixins */
+
+@media screen and (max-width: 680px) {
+  #main-contact #contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #location #apartment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  #apartment {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #apartment {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #main-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  #main-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  #apartment {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

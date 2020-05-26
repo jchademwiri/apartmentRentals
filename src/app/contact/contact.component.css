@@ -1,9 +1,18 @@
 #main-contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
 }
 
 .input-full-width {
   width: 100%;
+}
+.myprofile {
+  width: 200px;
+  border-radius: 50%;
+  border: #673ab7 5px solid;
+}
+
+#contact-details,
+#contact-form {
+  border-bottom: #673ab7 5px solid;
+  
 }
