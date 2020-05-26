@@ -1,0 +1,88 @@
+<section>
+  <mat-card-title>
+    <h1>Contact Us</h1>
+  </mat-card-title>
+  <mat-card id="main-contact">
+    <mat-card id="contact-details">
+      <h3>My contact Details</h3>
+      <p class="contact-align">
+        <mat-icon matSuffix>person</mat-icon> &nbsp;&nbsp;
+        <label for="name"></label> Jacob C.
+      </p>
+
+      <p class="contact-align">
+        <a href="tel:+27616911656">
+          <mat-icon matSuffix>phonelink_ring</mat-icon>&nbsp;&nbsp;
+        </a>
+        <label for="phone"></label> 0616 911 656
+      </p>
+      <p class="contact-align">
+        <a href="mailto:jchademwiri@gmail.com">
+          <mat-icon matSuffix>mail</mat-icon>&nbsp;&nbsp;
+        </a>
+        <label for="email"></label> jchademwiri@gmail.com
+      </p>
+    </mat-card>
+
+    <!-- Contact form Starts here -->
+    <mat-card id="contact-form">
+      <h3>Contact form</h3>
+      <form class="input-form">
+        <mat-form-field class="input-full-width">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="Ex. John" />
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="input-full-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Ex. Snow" />
+          <mat-icon matSuffix>people</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="input-full-width">
+          <mat-label>Phone Number</mat-label>
+          <span matPrefix>+27 &nbsp;</span>
+          <input type="tel" matInput placeholder="555-555-1234" />
+          <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="input-full-width">
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            [formControl]="emailFormControl"
+            placeholder="Ex. pat@example.com"
+          />
+          <mat-icon matSuffix>email</mat-icon>
+          <mat-error
+            *ngIf="
+              emailFormControl.hasError('email') &&
+              !emailFormControl.hasError('required')
+            "
+          >
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="input-full-width">
+          <mat-label>Message</mat-label>
+          <input
+            matInput
+            #message
+            maxlength="256"
+            placeholder="Ex. I need help with..."
+          />
+          <mat-icon matSuffix>comment</mat-icon>
+          <mat-hint align="start"> </mat-hint>
+          <mat-hint align="end">{{ message.value.length }} / 256</mat-hint>
+        </mat-form-field>
+        <mat-card-actions>
+          <button mat-button aria-label="send messege">
+            Send Messege &nbsp;&nbsp;
+            <mat-icon>send</mat-icon>
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </mat-card>
+</section>
