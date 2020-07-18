@@ -15,6 +15,9 @@
       <a mat-list-item routerLink="/contact" routerLinkActive="active"
         >Contact</a
       >
+      <a mat-list-item routerLink="/signin" routerLinkActive="active"
+        >Account</a
+      >
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -28,13 +31,16 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Apartment Rentals Manicaland</span>
+      <span>Apartment Rentals</span>
       <span class="spacer"></span>
       <div [ngClass]="{ hidden: !(isHandset$ | async) === false }">
         <a mat-list-item routerLink="/home" routerLinkActive="active">Home</a>
         <a mat-list-item routerLink="/about" routerLinkActive="active">About</a>
         <a mat-list-item routerLink="/contact" routerLinkActive="active"
           >Contact</a
+        >
+        <a mat-list-item routerLink="/signin" routerLinkActive="active"
+          >Account</a
         >
       </div>
     </mat-toolbar>

@@ -1,0 +1,86 @@
+mat-card-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  align-items: center;
+}
+#main-contact {
+  display: grid;
+}
+
+.input-full-width {
+  width: 100%;
+}
+.myprofile {
+  width: 200px;
+  border-radius: 50%;
+  border: #673ab7 5px solid;
+}
+
+#account-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact {
+  padding-top: 50px;
+}
+
+.why-us-list {
+  padding: 5px 10px;
+}
+
+span {
+  background-color: #673ab7;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+#account-sidebar,
+#contact-form {
+  border-bottom: #673ab7 5px solid;
+}
+mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+small {
+  display: flex;
+}
+
+/* Media Query Mixins */
+
+@media screen and (max-width: 680px) {
+  #main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #account-sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #account-sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #main-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  #main-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}

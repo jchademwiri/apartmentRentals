@@ -1,6 +1,6 @@
 <section>
   <mat-card-title>
-    <h1>Contact Us</h1>
+    <h1 class="lead">Contact Us</h1>
   </mat-card-title>
   <mat-card id="main-contact">
     <mat-card id="contact-details">
@@ -9,9 +9,11 @@
       <img
         class="myprofile"
         src="../../assets/images/portrait.jpg"
-        alt="myself"
-        srcset=""
+        alt="profile"
       />
+      <!-- ALTANATIVE WAY -->
+      <!-- <img class="myprofile" [src]="imgUrl" alt="myself" srcset="" />
+      <img class="myprofile" src="{{ imgUrl }}" alt="myself" srcset="" /> -->
       <div class="profile-container">
         <p class="contact-align">
           <mat-icon matSuffix>person</mat-icon> &nbsp;&nbsp;
@@ -48,7 +50,7 @@
         </mat-form-field>
         <mat-form-field class="input-full-width">
           <mat-label>Phone Number</mat-label>
-          <span matPrefix>+27 &nbsp;</span>
+
           <input type="tel" matInput placeholder="555-555-1234" />
           <mat-icon matSuffix>phone</mat-icon>
         </mat-form-field>

@@ -9,6 +9,8 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+  imgUrl: '../../assets/images/portrait.jpg';
+
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,

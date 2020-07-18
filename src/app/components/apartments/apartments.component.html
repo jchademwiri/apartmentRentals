@@ -1,0 +1,60 @@
+<mat-card id="main-header">
+  <h1 class="lead">{{ title }}</h1>
+  <p>beautiful home, ever green!</p>
+</mat-card>
+<section>
+  <mat-card-title id="location">
+    <form id="apartment">
+      <mat-card *ngFor="let apartment of apartments" class="rent-card">
+        <!-- <img mat-card-image [src]="apartment.imagePath" alt="house image" /> -->
+        <img
+          mat-card-image
+          src="{{ apartment.imagePath }}"
+          alt="house image"
+        />
+        <mat-card-title>
+          <label for="address"> </label>
+          <h2>{{ apartment.address }}</h2>
+        </mat-card-title>
+        <mat-card-content>
+          <!-- <p>
+            <label for="description"> </label>
+            {{ apartment.description }}
+          </p> -->
+          <p>
+            <label for="rooms">Rooms: {{ apartment.rooms }}</label>
+          </p>
+          <p>
+            <label for="price">Price: {{ apartment.price | currency }} </label>
+          </p>
+          <!-- <p>
+            <label for="name">Name: {{ apartment.name }} </label>
+          </p>
+          <p>
+            <label for="phone"
+              >Phone: <a href="tel:+275555555"> {{ apartment.phone }}</a>
+            </label>
+          </p>
+          <p>
+            <label for="email"
+              >Email:
+              <a href="mailto:email@email.com ">{{ apartment.email }}</a>
+            </label>
+          </p> -->
+        </mat-card-content>
+        <mat-card-actions>
+          <!-- <button mat-button (click)="call()">Call</button>
+          <button mat-button (click)="messege()">MESSEGE</button>
+          <button mat-button (click)="mail()">Email</button> -->
+          <button
+            class="full-width"
+            mat-button
+            (click)="apartmentDetails(apartment)"
+          >
+            View Apartment Details
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </mat-card-title>
+</section>
