@@ -1,38 +1,47 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, ParamMap } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import { IApartment } from './../../../assets/data/apartment';
 import { ApartmentService } from '../../service/apartment.service';
 
 @Component({
   selector: 'app-apartment-details',
   templateUrl: './apartment-details.component.html',
-  styleUrls: ['./apartment-details.component.css']
+  styleUrls: ['./apartment-details.component.css'],
 })
 export class ApartmentDetailsComponent implements OnInit {
-  title = 'Apartment Details';
-  public apartmentId;
+  errorMessege = '';
+  apartment: IApartment;
+  private _url = '/assets/data/apartments.json';
 
-  constructor(private _apartmentService: ApartmentService, private route: ActivatedRoute, private router: Router) { }
-
-  public apartments = [];
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private apartmentService: ApartmentService,
+    private http: HttpClient
+  ) {}
 
   ngOnInit(): void {
-    this._apartmentService.getApartments().subscribe(data => this.apartments = data);
+    const param = this.route.snapshot.paramMap.get('id');
+    if (param) {
+      const id = +param;
+      this.getApartment(id);
+    }
+  }
 
-    // let id = parseInt(this.route.snapshot.paramMap.get('id'))
-    // this.apartmentId = id
-
-    this.route.paramMap.subscribe((params: ParamMap) => {
-      const id = parseInt(params.get('id'));
-      this.apartmentId = id;
+  getApartment(id: number): void {
+    this.apartmentService.getApartment(id).subscribe({
+      next: (apartment) => (this.apartment = apartment),
+      error: (err) => (this.errorMessege = err),
     });
+  }
 
+  goBack(): void {
+    this.router.navigate(['/home']);
   }
-  goPrevious() {
-    const previousId = this.apartmentId - 1;
-    this.router.navigate(['/apartment', previousId]);
-  }
-  goNext() {
-    const nextId = this.apartmentId + 1;
-    this.router.navigate(['/apartment', nextId]);
-  }
+
+  call() {}
+  messege() {}
+  mail() {}
 }

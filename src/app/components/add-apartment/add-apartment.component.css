@@ -1,45 +1,32 @@
-section {
+mat-card-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 2rem;
   align-items: center;
-  min-height: 50vh;
-}
-
-mat-card {
-  width: 500px;
-}
-
-.input-form {
-  width: 450px;
 }
 
 .input-full-width {
   width: 100%;
 }
 
-mat-card-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-small {
-  display: flex;
+#apartment-form {
+  width: 70%;
+  margin: auto;
+  border-bottom: #673ab7 5px solid;
 }
 
 /* Media Query Mixins */
 
 @media screen and (max-width: 680px) {
-  mat-card {
-    width: 90%;
-  }
-
-  .input-form {
+  #apartment-form {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #apartment-form {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {

@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ApartmentService } from './service/apartment.service';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { AddApartmentComponent } from './components/add-apartment/add-apartment.component';
 
 
 
@@ -33,7 +34,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
     routingComponents,
     FooterComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    AddApartmentComponent
   ],
   imports: [
     FormsModule,

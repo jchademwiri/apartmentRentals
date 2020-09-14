@@ -1,0 +1,34 @@
+  ,
+  {
+    "apartmentId": "4",
+    "imagePath": "/assets/images/bundle.jpg",
+    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
+    "rooms": 3,
+    "price": 90,
+    "name": "John Doe",
+    "phone": "555-555-555",
+    "email": "mail@email.com",
+    "address": "145 New dangare, Sakubva"
+  },
+  {
+    "apartmentId": "5",
+    "imagePath": "/assets/images/bundle.jpg",
+    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
+    "rooms": 3,
+    "price": 90,
+    "name": "John Mike",
+    "phone": "555-555-555",
+    "email": "mail@email.com",
+    "address": "145 New dangare, Sakubva"
+  },
+  {
+    "apartmentId": "6",
+    "imagePath": "/assets/images/bundle.jpg",
+    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
+    "rooms": 1,
+    "price": 30,
+    "name": "Rose Doe",
+    "phone": "555-555-555",
+    "email": "mail@email.com",
+    "address": "145 New dangare, Sakubva"
+  }

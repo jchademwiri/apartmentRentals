@@ -15,7 +15,7 @@ ul li {
   list-style: none;
 }
 section {
-  width: 90vw;
+  width: 85%;
   margin: auto;
   align-items: center;
 }
@@ -23,61 +23,3 @@ section {
 mat-icon {
   color: #673ab7;
 }
-
-/* Media Query Mixins */
-
-/* @media screen and (max-width: 680px) {
-  #main-contact #contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #location #apartment {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  mat-card #about {
-    width: 100vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #contact-details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-  #apartment {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  mat-card #about {
-    max-width: 100vw;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  #apartment {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #main-contact {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  mat-card #about {
-    max-width: 80vw;
-  }
-}
-
-@media screen and (min-width: 1171px) {
-  #main-contact {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  #apartment {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  mat-card #about {
-    max-width: 50vw;
-  }
-} */

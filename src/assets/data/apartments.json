@@ -1,68 +1,38 @@
 [
   {
-    "apartmentId": "1",
-    "imagePath": "https://source.unsplash.com/400x200/?room",
-    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
+    "apartmentId": 1,
+    "imagePath": "/assets/images/house-1.jpg",
+    "description": "A laxuary home in Sakubva. a good place for a family.",
+    "reference": "SK025",
     "rooms": 3,
     "price": 90,
-    "name": "John Doe",
+    "name": "Luke Mike",
     "phone": "555-555-555",
     "email": "mail@email.com",
-    "address": "145 New dangare, Sakubva"
+    "address": "102 Old Zororo, Sakubva"
   },
   {
-    "apartmentId": "2",
-    "imagePath": "https://source.unsplash.com/400x200/?room",
-    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
+    "apartmentId": 2,
+    "imagePath": "/assets/images/house-2.jpeg",
+    "description": "A laxuary home in Chikanga. a good place for a family.",
+    "reference": "CHK103",
     "rooms": 3,
     "price": 90,
-    "name": "John Doe",
+    "name": "Rose",
     "phone": "555-555-555",
     "email": "mail@email.com",
-    "address": "145 New dangare, Sakubva"
+    "address": "345 Phase 2 , chikanga"
   },
   {
-    "apartmentId": "3",
-    "imagePath": "https://source.unsplash.com/400x200/?room",
-    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
-    "rooms": 3,
-    "price": 90,
-    "name": "John Doe",
+    "apartmentId": 3,
+    "imagePath": "/assets/images/house-3.jpg",
+    "description": "A laxuary home in Dangamvura.",
+    "reference": "DMV135",
+    "rooms": 2,
+    "price": 70,
+    "name": "Jacob C",
     "phone": "555-555-555",
     "email": "mail@email.com",
-    "address": "145 New dangare, Sakubva"
-  },
-  {
-    "apartmentId": "4",
-    "imagePath": "https://source.unsplash.com/400x200/?room",
-    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
-    "rooms": 3,
-    "price": 90,
-    "name": "John Doe",
-    "phone": "555-555-555",
-    "email": "mail@email.com",
-    "address": "145 New dangare, Sakubva"
-  },
-  {
-    "apartmentId": "5",
-    "imagePath": "https://source.unsplash.com/400x200/?room",
-    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
-    "rooms": 3,
-    "price": 90,
-    "name": "John Doe",
-    "phone": "555-555-555",
-    "email": "mail@email.com",
-    "address": "145 New dangare, Sakubva"
-  },
-  {
-    "apartmentId": "6",
-    "imagePath": "https://source.unsplash.com/400x200/?room",
-    "description": "A laxuary home in mutare/chikanga. a good place for a family.",
-    "rooms": 3,
-    "price": 90,
-    "name": "John Doe",
-    "phone": "555-555-555",
-    "email": "mail@email.com",
-    "address": "145 New dangare, Sakubva"
+    "address": "4574 Area C, Dangamvura"
   }
 ]

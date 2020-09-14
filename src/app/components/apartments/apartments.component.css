@@ -5,10 +5,11 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 40vh;
+  height: 30vh;
   position: relative;
-  background: url("https://source.unsplash.com/random/?forest");
+  background: url("/assets/images/house-4.jpg");
   background-size: cover;
+  background-position: center;
   background-color: #0f0322;
 }
 #main-header:before {
@@ -18,7 +19,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   background: #0f0322;
   background-size: cover;
 }
@@ -26,6 +27,11 @@
 p {
   z-index: 3;
 }
+
+#apt-img {
+  cursor: pointer;
+}
+
 #main-header .lead {
   font-size: 4rem;
   line-height: 1;
@@ -51,6 +57,11 @@ p {
   width: 100%;
   color: #673ab7;
 }
+
+#apt-img {
+  max-height: 200px;
+}
+
 /* Media Query Mixins */
 
 @media screen and (max-width: 680px) {

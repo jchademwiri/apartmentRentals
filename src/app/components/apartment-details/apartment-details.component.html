@@ -1,17 +1,69 @@
 <section>
-  <p>
-    You have selected apartment Details for an apartment with id =
-    {{ apartmentId }}.
-  </p>
 
-  <section>
-    <a (click)="goPrevious()">Previous</a>
-    <a (click)="goNext()">Next</a>
-  </section>
-
-  <!-- <div *ngFor="let apartment of apartments">
+  <mat-card-actions id="heading">
+    <button mat-button (click)="goBack()">
+      <mat-icon matSuffix>keyboard_backspace</mat-icon> Back
+    </button>
+    <h1> <strong>{{ apartment?.address }}</strong> </h1>
     <p>
-      <label for="name">Name: {{ apartment.name }} </label>
+      <label for="description"> </label>
+      {{ apartment?.description }}
     </p>
-  </div> -->
+  </mat-card-actions>
+
+
+  <mat-card id="main-container" *ngIf="apartment">
+
+    <div id="apartment-image">
+      <img mat-card-image src="{{ apartment?.imagePath }}" alt="house image" />
+    </div>
+
+    <!-- Details form Starts here -->
+    <div id="apartment-data">
+      <p>
+        <label for="reference">REFERENCE: </label>
+        <strong>
+          {{ apartment?.reference | uppercase }}
+        </strong>
+      </p>
+
+      <p>
+        <label for="rooms">Rooms: {{ apartment?.rooms }}</label>
+      </p>
+      <p>
+        <label for="price">Price: {{ apartment?.price | currency }} </label>
+      </p>
+      <p>
+        <label for="name">Name: {{ apartment?.name }} </label>
+      </p>
+      <p>
+        <label for="phone">Phone: <a href="tel:+275555555"> {{ apartment?.phone }}</a>
+        </label>
+      </p>
+      <p>
+        <label for="email">Email:
+          <a href="mailto:email@email.com ">{{ apartment?.email }}</a>
+        </label>
+      </p>
+      <br>
+      <mat-card-actions>
+        <a href="tel:+275555555">
+          <button mat-button>
+            <mat-icon matSuffix>phonelink_ring</mat-icon> Call
+          </button>
+        </a>
+        <a href="https://bit.ly/32t2UFa" target="_blank" rel="noopener" rel>
+          <button mat-button>
+            <mat-icon matSuffix>question_answer</mat-icon> WhatsApp
+          </button>
+        </a>
+        <a href="mailto:jchademwiri@outlook.com">
+          <button mat-button>
+            <mat-icon matSuffix>email</mat-icon> Email
+          </button>
+        </a>
+      </mat-card-actions>
+    </div>
+
+  </mat-card>
 </section>
